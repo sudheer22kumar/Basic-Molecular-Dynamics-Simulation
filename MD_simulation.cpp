@@ -265,16 +265,16 @@ int main()
     srand(time(NULL));
     n = 64; //512 // No. of argon atoms.
     //    printf ("Simulation will run for 100,000 steps. \n");
-    in_pos = fopen("Initial Positions.txt","w");
-    ini_pos = fopen("Initial Positions.xyz", "w");
-    ini_vel = fopen("Initial Velocities.txt","w");
-    distance = fopen("Initial Distances.txt","w");
+    in_pos = fopen("Initial_Positions.txt","w");
+    ini_pos = fopen("Initial_Positions.xyz", "w");
+    ini_vel = fopen("Initial_Velocities.txt","w");
+    distance = fopen("Initial_Distances.txt","w");
     forces = fopen("Forces.txt","w");
     energy = fopen("Energy.txt","w");
-    final_pos = fopen("Final Positions.xyz","w");
-    total_energy = fopen("Total Energies.txt","w");
-    kinetic = fopen("Kinetic Energies.txt","w");
-    potential = fopen("Potential vs. r.txt","w");
+    final_pos = fopen("Final_Positions.xyz","w");
+    total_energy = fopen("Total_Energies.txt","w");
+    kinetic = fopen("Kinetic_Energies.txt","w");
+    potential = fopen("Potential_vs_r.txt","w");
     Initial_positions(&pos[0][0], &pos[0][1], &pos[0][2]);
 //    printf ("%f\t%f\t%f\n", pos[0][0], pos[0][1], pos[0][2]);
     for ( i=1; i<n; i++)
